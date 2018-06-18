@@ -187,14 +187,15 @@ echo -e $blue  '¿Desea continuar con la actualización del sistema? (s/n)' $res
 read b
 
 if [[ $b == 's' ]]; then
-	echo -e $blue 'Comienza la actualizacion del/...Espere por favor.....'  $restore
-	actualizacion
+
 
 	echo -e $blue "Comenzando proceso de instalacion de paquetes, ¿Desea continuar? (s/n)" $restore
 	read b
 	if [[ $b == 's' ]]; then
 		instalacion
 	fi
+		echo -e $blue 'Comienza la actualizacion del/...Espere por favor.....'  $restore
+	actualizacion
 fi
 
 echo -e $blue "Fin de la instalación" $restore
