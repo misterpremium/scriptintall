@@ -123,6 +123,8 @@ sudo yum install -y ntpd
 comprobar
 sudo yum install -y rdate
 comprobar
+sudo yum install -y rsync
+comprobar
 sudo yum install -y traceroute
 comprobar
 
